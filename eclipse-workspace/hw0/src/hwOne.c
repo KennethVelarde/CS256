@@ -3,6 +3,6 @@
 #include <stdlib.h>
 
 int main(void) {
-	printf("Hello, my name is Kenneth-Matthew Velarde");
+	printf("Goodbye, I finished my CS-2560 HW1.");
 	return 0;
 }
