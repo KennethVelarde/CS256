@@ -1,0 +1,1 @@
+structAsFunction.o: ../structAsFunction.c

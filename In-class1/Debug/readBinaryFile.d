@@ -1,0 +1,1 @@
+readBinaryFile.o: ../readBinaryFile.c

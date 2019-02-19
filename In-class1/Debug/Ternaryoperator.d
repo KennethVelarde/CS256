@@ -1,0 +1,1 @@
+Ternaryoperator.o: ../Ternaryoperator.c

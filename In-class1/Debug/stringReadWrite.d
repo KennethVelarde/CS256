@@ -1,0 +1,1 @@
+stringReadWrite.o: ../stringReadWrite.c

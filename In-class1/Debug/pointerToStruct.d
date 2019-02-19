@@ -1,0 +1,1 @@
+pointerToStruct.o: ../pointerToStruct.c
