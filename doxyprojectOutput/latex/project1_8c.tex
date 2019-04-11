@@ -1,0 +1,126 @@
+\hypertarget{project1_8c}{}\section{/\+Users/kenneth-\/matthewvelarde/\+Downloads/\+C\+S256-\/master/\+Project1\+C\+S256/project1.c File Reference}
+\label{project1_8c}\index{/Users/kenneth-\/matthewvelarde/Downloads/CS256-\/master/Project1CS256/project1.c@{/Users/kenneth-\/matthewvelarde/Downloads/CS256-\/master/Project1CS256/project1.c}}
+
+
+This is the source code for project \#1 for C\+S-\/2560. The header, $<$stdio.\+h$>$, is a library for performing input/output operations.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{project1_8c_ae131052f2b5c9feedeac953d168f3565}{set\+\_\+seats}} (char arr\mbox{[}$\,$\mbox{]}\mbox{[}30\mbox{]}, int prices\mbox{[}$\,$\mbox{]}, int group\+\_\+total, int profit)
+\begin{DoxyCompactList}\small\item\em set\+\_\+seats is where the user chooses the row and column of preferred seat. The profit/ money made from seats is determined here as well. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{project1_8c_ab82cac8707ec0f0b0321d95a709f8139}{print\+Seats}} (char arr\mbox{[}$\,$\mbox{]}\mbox{[}30\mbox{]})
+\item 
+void \mbox{\hyperlink{project1_8c_a93ecdcf7f04528ad8828bc2855f92a58}{available\+\_\+seats}} (char seats\mbox{[}$\,$\mbox{]}\mbox{[}30\mbox{]})
+\begin{DoxyCompactList}\small\item\em availible\+\_\+seats tells the user how many seats are still left to purchase. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{project1_8c_a4053f4188b22db6150398e061cafdae4}{print\+Menu}} (int overall\+\_\+profit, int seats\+\_\+sold\+\_\+total, char seating\mbox{[}$\,$\mbox{]}\mbox{[}30\mbox{]})
+\begin{DoxyCompactList}\small\item\em print\+Menu prints the options the user may input for program. If user inputs 1, then they are able to buy tix, if user inputs 2, then they can see the total profits from the seats/tix sold. If user inputs 3, then they can see how many seats are still currently able to be sold. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{project1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em the main function that runs the source code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the source code for project \#1 for C\+S-\/2560. The header, $<$stdio.\+h$>$, is a library for performing input/output operations. 
+
+\begin{DoxyAuthor}{Author}
+Kenneth-\/\+Matthew Velarde 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 April 2019 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{project1_8c_a93ecdcf7f04528ad8828bc2855f92a58}\label{project1_8c_a93ecdcf7f04528ad8828bc2855f92a58}} 
+\index{project1.c@{project1.c}!available\_seats@{available\_seats}}
+\index{available\_seats@{available\_seats}!project1.c@{project1.c}}
+\subsubsection{\texorpdfstring{available\_seats()}{available\_seats()}}
+{\footnotesize\ttfamily void available\+\_\+seats (\begin{DoxyParamCaption}\item[{char}]{seats\mbox{[}$\,$\mbox{]}\mbox{[}30\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+availible\+\_\+seats tells the user how many seats are still left to purchase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seats} & is the number of seats still availible to be sold. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{project1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{project1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{project1.c@{project1.c}!main@{main}}
+\index{main@{main}!project1.c@{project1.c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the main function that runs the source code. 
+
+\begin{DoxyReturn}{Returns}
+0 upon exit success.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{project1_8c_a4053f4188b22db6150398e061cafdae4}{print\+Menu}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{project1_8c_a4053f4188b22db6150398e061cafdae4}\label{project1_8c_a4053f4188b22db6150398e061cafdae4}} 
+\index{project1.c@{project1.c}!printMenu@{printMenu}}
+\index{printMenu@{printMenu}!project1.c@{project1.c}}
+\subsubsection{\texorpdfstring{printMenu()}{printMenu()}}
+{\footnotesize\ttfamily int print\+Menu (\begin{DoxyParamCaption}\item[{int}]{overall\+\_\+profit,  }\item[{int}]{seats\+\_\+sold\+\_\+total,  }\item[{char}]{seating\mbox{[}$\,$\mbox{]}\mbox{[}30\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+print\+Menu prints the options the user may input for program. If user inputs 1, then they are able to buy tix, if user inputs 2, then they can see the total profits from the seats/tix sold. If user inputs 3, then they can see how many seats are still currently able to be sold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em overall\+\_\+profit} & total profit from total seats sold. \\
+\hline
+{\em seats\+\_\+sold\+\_\+total} & number of total seats sold \\
+\hline
+{\em seating} & seat chart \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer stating how many tix the user wishes to purchase 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{project1_8c_a93ecdcf7f04528ad8828bc2855f92a58}{available\+\_\+seats}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{project1_8c_ab82cac8707ec0f0b0321d95a709f8139}\label{project1_8c_ab82cac8707ec0f0b0321d95a709f8139}} 
+\index{project1.c@{project1.c}!printSeats@{printSeats}}
+\index{printSeats@{printSeats}!project1.c@{project1.c}}
+\subsubsection{\texorpdfstring{printSeats()}{printSeats()}}
+{\footnotesize\ttfamily void print\+Seats (\begin{DoxyParamCaption}\item[{char}]{arr\mbox{[}$\,$\mbox{]}\mbox{[}30\mbox{]} }\end{DoxyParamCaption})}
+
+print\+Seats initially prints out the seat chart, then updates the chart as seats are sold. 
+\begin{DoxyParams}{Parameters}
+{\em arr} & is the 2d array holding the seat chart \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{project1_8c_ae131052f2b5c9feedeac953d168f3565}\label{project1_8c_ae131052f2b5c9feedeac953d168f3565}} 
+\index{project1.c@{project1.c}!set\_seats@{set\_seats}}
+\index{set\_seats@{set\_seats}!project1.c@{project1.c}}
+\subsubsection{\texorpdfstring{set\_seats()}{set\_seats()}}
+{\footnotesize\ttfamily int set\+\_\+seats (\begin{DoxyParamCaption}\item[{char}]{arr\mbox{[}$\,$\mbox{]}\mbox{[}30\mbox{]},  }\item[{int}]{prices\mbox{[}$\,$\mbox{]},  }\item[{int}]{group\+\_\+total,  }\item[{int}]{profit }\end{DoxyParamCaption})}
+
+
+
+set\+\_\+seats is where the user chooses the row and column of preferred seat. The profit/ money made from seats is determined here as well. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & represents the 2d array of seats \\
+\hline
+{\em prices} & is the array holding the price of the seats \\
+\hline
+{\em group\+\_\+total} & is the total number of seats left \\
+\hline
+{\em profit} & is the total amount of seats cost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the total cost amount of the seats chosen 
+\end{DoxyReturn}
