@@ -1,0 +1,140 @@
+\hypertarget{hw3_8c}{}\section{/\+Users/kenneth-\/matthewvelarde/\+Downloads/\+C\+S256-\/master/homework3/hw3.c File Reference}
+\label{hw3_8c}\index{/Users/kenneth-\/matthewvelarde/Downloads/CS256-\/master/homework3/hw3.c@{/Users/kenneth-\/matthewvelarde/Downloads/CS256-\/master/homework3/hw3.c}}
+
+
+this file contains the source code for hw\#3. The header, $<$stdio.\+h$>$, is a library for performing input/output operations. The header, $<$stdlib.\+h$>$, is the general purpose standard library for C programming in general.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{hw3_8c_a734d1fc4658368bd876dd8cb45d11fc3}{rev\+Array}} (int arr\mbox{[}$\,$\mbox{]}, int size)
+\begin{DoxyCompactList}\small\item\em rev\+Array is a function that reverses the contents of an integer array \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{hw3_8c_a3f4233476affcbbaaa14c04d83b9ba0c}{new\+Population}} ()
+\begin{DoxyCompactList}\small\item\em new\+Population manipulates the characteristcs of a population inputted by the user. It asks the user for the population characteristics such as initial size, annual birth rate, annual death rate, and the number of years of change it would like the program to output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{hw3_8c_acb2cd15b350b47a5bf5c4127bcd678f5}\label{hw3_8c_acb2cd15b350b47a5bf5c4127bcd678f5}} 
+void \mbox{\hyperlink{hw3_8c_acb2cd15b350b47a5bf5c4127bcd678f5}{print\+Board}} (char board\mbox{[}$\,$\mbox{]}\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em print\+Board represents the tic-\/tac-\/toe board being printed at start of a game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{hw3_8c_a166b36d786ca25548e6672070bebda8f}{tic\+Tac\+Toe}} ()
+\begin{DoxyCompactList}\small\item\em tic\+Tac\+Toe simulates a tic-\/tac-\/toe game betweenthe user and the computer. If there is either an \textquotesingle{}x\textquotesingle{} or an \textquotesingle{}o\textquotesingle{} three times in a row, then the respective symbol/player wins \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{hw3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em the main function that runs all the source code written. In addition to running the tic\+Tac\+Toe and population change simulator, Also holds the Geometry Calculator. It is able to calculate the area for a circle, rectange, and a triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this file contains the source code for hw\#3. The header, $<$stdio.\+h$>$, is a library for performing input/output operations. The header, $<$stdlib.\+h$>$, is the general purpose standard library for C programming in general. 
+
+\begin{DoxyAuthor}{Author}
+Kenneth-\/\+Matthew Velarde 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 April 2019 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{hw3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{hw3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{hw3.c@{hw3.c}!main@{main}}
+\index{main@{main}!hw3.c@{hw3.c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the main function that runs all the source code written. In addition to running the tic\+Tac\+Toe and population change simulator, Also holds the Geometry Calculator. It is able to calculate the area for a circle, rectange, and a triangle. 
+
+\begin{DoxyReturn}{Returns}
+0 upon exit success
+\end{DoxyReturn}
+The \char`\"{}menu\char`\"{} and algorithms for the Geometry Calculator\+: \begin{DoxyVerb}* printf("Geometry Calculator\n");
+   printf("1. the Area of a Circle\n");
+   printf("2. the Area of a Rectangle\n");
+   printf("3. the Area of a Triangle\n");
+   printf("4. Quit\n");
+
+case 1:
+       printf("Radius of circle:");
+       fflush(stdout);
+       scanf("%lf ", &radius);
+       if(radius< 0){
+                     printf("radius of circle:\n");
+                                   fflush(stdout);
+                                   scanf("%lf %lf", &length,&width);
+       }
+       areaOfCircle =(p) * (radius*radius);
+       printf("area of Circle: %f\n", areaOfCircle);
+       break;
+
+      case 2:
+               printf("length and width of rectangle:\n");
+               fflush(stdout);
+               scanf("%lf %lf", &length,&width);
+               if(length < 0 || width < 0){
+                 printf("length and width of rectangle:\n");
+                               fflush(stdout);
+                               scanf("%lf %lf", &length,&width);
+                                           }
+               areaOfRect = length * width;
+            printf("area of Rect: %f\n", areaOfRect);
+               break;
+
+      case 3:
+       printf("length of triangle base and height:\n");
+       fflush(stdout);
+       scanf("%lf %lf", &tribase,&trilen);
+       if(tribase < 0 || trilen < 0){
+                     printf("length and width of rectangle:\n");
+                                   fflush(stdout);
+                                   scanf("%lf %lf", &length,&width);
+                                       }
+                   areaOfTri = (tribase * trilen) * .5;
+                printf("area of Triangle: %f\n", areaOfTri);
+                   break;
+      case 4:
+           break;
+      default:
+       printf("not a correct menu choice, Choose another option.");
+         fflush(stdout);
+         scanf("%d", &i);
+         break;\end{DoxyVerb}
+ \mbox{\Hypertarget{hw3_8c_a3f4233476affcbbaaa14c04d83b9ba0c}\label{hw3_8c_a3f4233476affcbbaaa14c04d83b9ba0c}} 
+\index{hw3.c@{hw3.c}!newPopulation@{newPopulation}}
+\index{newPopulation@{newPopulation}!hw3.c@{hw3.c}}
+\subsubsection{\texorpdfstring{newPopulation()}{newPopulation()}}
+{\footnotesize\ttfamily int new\+Population (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+new\+Population manipulates the characteristcs of a population inputted by the user. It asks the user for the population characteristics such as initial size, annual birth rate, annual death rate, and the number of years of change it would like the program to output. 
+
+\begin{DoxyReturn}{Returns}
+an integer representing the (new)changed population. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hw3_8c_a734d1fc4658368bd876dd8cb45d11fc3}\label{hw3_8c_a734d1fc4658368bd876dd8cb45d11fc3}} 
+\index{hw3.c@{hw3.c}!revArray@{revArray}}
+\index{revArray@{revArray}!hw3.c@{hw3.c}}
+\subsubsection{\texorpdfstring{revArray()}{revArray()}}
+{\footnotesize\ttfamily int$\ast$ rev\+Array (\begin{DoxyParamCaption}\item[{int}]{arr\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+rev\+Array is a function that reverses the contents of an integer array 
+
+\begin{DoxyReturn}{Returns}
+an integer pointer to an array that is reversed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hw3_8c_a166b36d786ca25548e6672070bebda8f}\label{hw3_8c_a166b36d786ca25548e6672070bebda8f}} 
+\index{hw3.c@{hw3.c}!ticTacToe@{ticTacToe}}
+\index{ticTacToe@{ticTacToe}!hw3.c@{hw3.c}}
+\subsubsection{\texorpdfstring{ticTacToe()}{ticTacToe()}}
+{\footnotesize\ttfamily int tic\+Tac\+Toe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+tic\+Tac\+Toe simulates a tic-\/tac-\/toe game betweenthe user and the computer. If there is either an \textquotesingle{}x\textquotesingle{} or an \textquotesingle{}o\textquotesingle{} three times in a row, then the respective symbol/player wins 
+
+\begin{DoxyReturn}{Returns}
+int representing which player(user or computer) won or a draw if neither won. A message is also outputted based on the winner. 
+\end{DoxyReturn}
